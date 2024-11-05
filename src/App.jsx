@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import "./css/button.css";
-import "./css/drink.css";
 import "./css/header.css";
-import Drink from "./components/Drink";
-import GetDrinkButton from "./components/GetDrinkButton";
 import Header from "./components/Header";
+import Drink from "./components/Drink";
+import AllPostCocktails from "./components/AllPostCocktails";
+import Mycocktails from "./components/Mycocktails";
+import NotFound from "./components/NotFound";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState("");
@@ -20,11 +21,19 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       <Header />
-      <GetDrinkButton getRandomCocktail={getRandomCocktail} />
-      <Drink data={data} />
-    </>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<Drink data={data} getRandomCocktail={getRandomCocktail} />}
+        ></Route>
+        <Route path="/AllPostCocktails" element={<AllPostCocktails />}></Route>
+        <Route path="/Mycocktails" element={<Mycocktails />}></Route>
+        <Route path="/NotFound" element={<NotFound />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

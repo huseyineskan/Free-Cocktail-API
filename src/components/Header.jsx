@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,14 +9,11 @@ function Header() {
           <a href="/">Cocktail</a>
         </div>
         <nav>
-          <ul>
-            <li>
-              <a href="#">Get a drink</a>
-            </li>
-            <li>
-              <a href="#">My List</a>
-            </li>
-          </ul>
+          <Link to="/">Get a drink</Link>
+
+          <Link to="/allpostcocktails">All past cocktails</Link>
+
+          <Link to="/mycocktails">My Cocktails</Link>
         </nav>
       </div>
     </header>
