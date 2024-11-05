@@ -1,14 +1,23 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Drink({ data }) {
   return (
-    <>
+    <div className="container drink-container">
       {data ? (
         <>
           {data.drinks.map((drink) => (
             <div className="drink" key={drink.idDrink}>
               <div className="drink-img">
-                <img src={drink.strDrinkThumb} alt={drink.strDrink} />
+                <LazyLoadImage
+                  src={drink.strDrinkThumb}
+                  alt={drink.strDrink}
+                  effect="blur"
+                  wrapperProps={{
+                    style: { transitionDelay: "1s" },
+                  }}
+                />
               </div>
               <div className="drink-infos">
                 <ul>
@@ -56,7 +65,7 @@ function Drink({ data }) {
       ) : (
         <p>loading...</p>
       )}
-    </>
+    </div>
   );
 }
 

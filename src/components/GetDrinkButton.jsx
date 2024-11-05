@@ -2,7 +2,7 @@ import React from "react";
 
 function GetDrinkButton({ getRandomCocktail }) {
   return (
-    <div className="btn">
+    <div className="container btn-container">
       <button
         onClick={() => {
           getRandomCocktail();

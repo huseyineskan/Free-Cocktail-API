@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import "./css/button.css";
 import "./css/drink.css";
+import "./css/header.css";
 import Drink from "./components/Drink";
 import GetDrinkButton from "./components/GetDrinkButton";
+import Header from "./components/Header";
 
 function App() {
   const [data, setData] = useState("");
@@ -18,10 +20,11 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <>
+      <Header />
       <GetDrinkButton getRandomCocktail={getRandomCocktail} />
       <Drink data={data} />
-    </div>
+    </>
   );
 }
 
