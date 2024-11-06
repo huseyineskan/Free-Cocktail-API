@@ -56,8 +56,8 @@ src/data/db.json
 
 ## Screnshots
 
-![Get a drink](https://github.com/huseyineskan/Free-Coctail-API/blob/main/src/img/get-a-drink.png)
+![Get a drink](https://github.com/huseyineskan/Free-Cocktail-API/blob/main/src/img/get-a-drink.png)
 
-![All Past Cocktails](https://github.com/huseyineskan/Free-Coctail-API/blob/main/src/img/all-past-cocktails.png)
+![All Past Cocktails](https://github.com/huseyineskan/Free-Cocktail-API/blob/main/src/img/all-past-cocktails.png)
 
-![My Favorites](https://github.com/huseyineskan/Free-Coctail-API/blob/main/src/img/my-favorites.png)
+![My Favorites](https://github.com/huseyineskan/Free-Cocktail-API/blob/main/src/img/my-favorites.png)
