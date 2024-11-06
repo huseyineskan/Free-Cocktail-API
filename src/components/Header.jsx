@@ -11,9 +11,9 @@ function Header() {
         <nav>
           <Link to="/">Get a drink</Link>
 
-          <Link to="/allpostcocktails">All past cocktails</Link>
+          <Link to="/allpastcocktails">All past cocktails</Link>
 
-          <Link to="/mycocktails">My Cocktails</Link>
+          <Link to="/myfavorites">My Favorites</Link>
         </nav>
       </div>
     </header>
