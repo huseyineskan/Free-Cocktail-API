@@ -49,7 +49,7 @@ function AllPastCocktails() {
         {allPastCocktailsData ? (
           allPastCocktailsData.length > 0 ? (
             allPastCocktailsData.map((drink, i) => (
-              <div key={i} className="my-coctail-box">
+              <div key={i} className="my-coctail-box" title={drink.name}>
                 <div
                   className="delete-cocktail"
                   onClick={() => {

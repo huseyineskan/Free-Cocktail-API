@@ -4,14 +4,14 @@
       "id": "12690",
       "name": "Lassi - A South Indian Drink",
       "img": "https://www.thecocktaildb.com/images/media/drink/iq6scx1487603980.jpg"
+    },
+    {
+      "id": "12754",
+      "name": "Sex on the Beach",
+      "img": "https://www.thecocktaildb.com/images/media/drink/fi67641668420787.jpg"
     }
   ],
   "allpastcocktails": [
-    {
-      "id": "13282",
-      "name": "Black & Tan",
-      "img": "https://www.thecocktaildb.com/images/media/drink/rwpswp1454511017.jpg"
-    },
     {
       "id": "13056",
       "name": "Wine Cooler",
@@ -23,24 +23,9 @@
       "img": "https://www.thecocktaildb.com/images/media/drink/akcpsh1493070267.jpg"
     },
     {
-      "id": "13389",
-      "name": "Snake Bite (UK)",
-      "img": "https://www.thecocktaildb.com/images/media/drink/xuwpyu1441248734.jpg"
-    },
-    {
       "id": "178342",
       "name": "Gin and Soda",
       "img": "https://www.thecocktaildb.com/images/media/drink/nzlyc81605905755.jpg"
-    },
-    {
-      "id": "178370",
-      "name": "Mauresque",
-      "img": "https://www.thecocktaildb.com/images/media/drink/duwfa11686236556.jpg"
-    },
-    {
-      "id": "12670",
-      "name": "Fruit Cooler",
-      "img": "https://www.thecocktaildb.com/images/media/drink/i3tfn31484430499.jpg"
     }
   ]
 }

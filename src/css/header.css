@@ -11,10 +11,6 @@ header {
   margin-top: 0;
 }
 
-nav {
-  transition: 300ms ease;
-}
-
 nav a {
   transition: 300ms ease;
   border: 2px solid #9b9b9b;
@@ -82,15 +78,16 @@ header a {
     bottom: 0;
     left: 0;
     top: 0;
+    height: 0;
     background-color: rgb(56, 56, 56);
-    z-index: 2;
     transition: 300ms ease;
-    overflow: hidden;
   }
 
   nav.active {
     opacity: 1;
-    right: 0;
+    z-index: 2;
+    transition: 300ms ease;
+    height: 100%;
   }
 
   nav a {
