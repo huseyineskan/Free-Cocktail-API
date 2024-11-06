@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
 import "./css/header.css";
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Header from "./components/Header";
+import Home from "./components/Home";
 import Drink from "./components/Drink";
 import AllPastCocktails from "./components/AllPastCocktails";
 import MyFavorites from "./components/MyFavorites";
 import NotFound from "./components/NotFound";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import axios from "axios";
 
 function App() {
@@ -26,9 +28,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route exact path="/" element={<Home />}></Route>
         <Route
-          exact
-          path="/"
+          path="/Drink"
           element={<Drink data={data} getRandomCocktail={getRandomCocktail} />}
         ></Route>
         <Route path="/AllPastCocktails" element={<AllPastCocktails />}></Route>

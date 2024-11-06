@@ -1,9 +1,9 @@
 {
   "myfavorites": [
     {
-      "id": "13056",
-      "name": "Wine Cooler",
-      "img": "https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
+      "id": "12690",
+      "name": "Lassi - A South Indian Drink",
+      "img": "https://www.thecocktaildb.com/images/media/drink/iq6scx1487603980.jpg"
     }
   ],
   "allpastcocktails": [
@@ -31,6 +31,11 @@
       "id": "178342",
       "name": "Gin and Soda",
       "img": "https://www.thecocktaildb.com/images/media/drink/nzlyc81605905755.jpg"
+    },
+    {
+      "id": "178370",
+      "name": "Mauresque",
+      "img": "https://www.thecocktaildb.com/images/media/drink/duwfa11686236556.jpg"
     }
   ]
 }

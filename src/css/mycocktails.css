@@ -115,6 +115,7 @@
   border: 1px solid #00c59e;
   padding: 6px 16px;
   border-radius: 15px;
+  text-decoration: none;
 }
 
 .basic-message a:hover {
