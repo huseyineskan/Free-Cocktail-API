@@ -1,56 +1,36 @@
 {
   "myfavorites": [
     {
-      "id": "16202",
-      "name": "Amaretto Sweet & Sour",
-      "img": "https://www.thecocktaildb.com/images/media/drink/vswwus1472668546.jpg"
-    },
-    {
-      "id": "11983",
-      "name": "Quaker's Cocktail",
-      "img": "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg"
-    },
-    {
-      "id": "11021",
-      "name": "Allegheny",
-      "img": "https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg"
+      "id": "13056",
+      "name": "Wine Cooler",
+      "img": "https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
     }
   ],
   "allpastcocktails": [
     {
-      "id": "17203",
-      "name": "Kir",
-      "img": "https://www.thecocktaildb.com/images/media/drink/apneom1504370294.jpg"
+      "id": "13282",
+      "name": "Black & Tan",
+      "img": "https://www.thecocktaildb.com/images/media/drink/rwpswp1454511017.jpg"
     },
     {
-      "id": "12706",
-      "name": "Imperial Cocktail",
-      "img": "https://www.thecocktaildb.com/images/media/drink/bcsj2e1487603625.jpg"
+      "id": "13056",
+      "name": "Wine Cooler",
+      "img": "https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg"
     },
     {
-      "id": "178309",
-      "name": "Espresso Rumtini",
-      "img": "https://www.thecocktaildb.com/images/media/drink/acvf171561574403.jpg"
+      "id": "14578",
+      "name": "Amaretto Sunrise",
+      "img": "https://www.thecocktaildb.com/images/media/drink/akcpsh1493070267.jpg"
     },
     {
-      "id": "178360",
-      "name": "Lemon Elderflower Spritzer",
-      "img": "https://www.thecocktaildb.com/images/media/drink/125w0o1630407389.jpg"
+      "id": "13389",
+      "name": "Snake Bite (UK)",
+      "img": "https://www.thecocktaildb.com/images/media/drink/xuwpyu1441248734.jpg"
     },
     {
-      "id": "12768",
-      "name": "Frappé",
-      "img": "https://www.thecocktaildb.com/images/media/drink/vqwryq1441245927.jpg"
-    },
-    {
-      "id": "11055",
-      "name": "Artillery",
-      "img": "https://www.thecocktaildb.com/images/media/drink/g1vnbe1493067747.jpg"
-    },
-    {
-      "id": "11983",
-      "name": "Quaker's Cocktail",
-      "img": "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg"
+      "id": "178342",
+      "name": "Gin and Soda",
+      "img": "https://www.thecocktaildb.com/images/media/drink/nzlyc81605905755.jpg"
     }
   ]
 }

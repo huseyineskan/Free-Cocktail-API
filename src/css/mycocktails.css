@@ -4,6 +4,10 @@
   gap: 20px;
 }
 
+.all-past-cocktails-container h2 {
+  position: relative;
+}
+
 .my-cocktails-box a {
   text-decoration: none;
   color: #000;
@@ -14,8 +18,43 @@
   overflow: hidden;
   background-color: #ffffff;
   max-width: 200px;
-  width: 100%;
+  /* width: 100%; */
   transition: 300ms ease;
+  flex: 1 1 calc(19% - 10px); /* Her bir öğenin genişliği */
+  max-width: calc(20% - 10px); /* Maksimum genişliği belirleyin */
+  position: relative;
+}
+
+.delete-cocktail {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: 300ms ease;
+  width: 22px;
+  height: 22px;
+  background-color: #c0392b;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-coctail-box:hover .delete-cocktail {
+  opacity: 1;
+  transition: 300ms ease;
+}
+
+.delete-cocktail svg {
+  fill: #ffffff;
+  transition: 100ms ease;
+  width: 10px;
+}
+
+.delete-cocktail svg:hover {
+  transition: 100ms ease;
 }
 
 .my-coctail-box:hover {
@@ -35,4 +74,71 @@
   text-align: center;
   padding: 10px 0;
   font-weight: 500;
+}
+
+/* All Past Cocktails */
+.delete-all-cocktails {
+  font-size: 16px;
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  display: flex;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 50ms ease;
+}
+
+.delete-all-cocktails:hover,
+.delete-all-cocktails:hover svg {
+  color: #e74c3c;
+  fill: #e74c3c;
+  transition: 50ms ease;
+}
+.delete-all-cocktails svg {
+  width: 20px;
+  margin-left: 10px;
+  transition: 50ms ease;
+}
+
+/* Basic message & loading */
+.basic-message {
+  font-size: 24px;
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.basic-message a {
+  display: inline-block;
+  font-size: 14px;
+  color: #00c59e;
+  border: 1px solid #00c59e;
+  padding: 6px 16px;
+  border-radius: 15px;
+}
+
+.basic-message a:hover {
+  background-color: #00c59e;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .my-coctail-box {
+    flex: 1 1 calc(24% - 10px); /* Ekran daraldıkça genişliği %50 yapın */
+    max-width: calc(25% - 10px);
+  }
+}
+
+@media (max-width: 820px) {
+  .my-coctail-box {
+    flex: 1 1 calc(32% - 10px); /* Ekran daraldıkça genişliği %50 yapın */
+    max-width: calc(33% - 10px);
+  }
+}
+
+@media (max-width: 570px) {
+  .my-coctail-box {
+    flex: 1 1 calc(49% - 10px); /* Daha da dar ekranlarda %100 genişlik */
+    max-width: calc(50% - 10px);
+  }
 }
