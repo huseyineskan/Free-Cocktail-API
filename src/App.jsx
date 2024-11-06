@@ -9,6 +9,7 @@ import AllPastCocktails from "./components/AllPastCocktails";
 import MyFavorites from "./components/MyFavorites";
 import NotFound from "./components/NotFound";
 import axios from "axios";
+import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState("");
@@ -37,6 +38,7 @@ function App() {
         <Route path="/MyFavorites" element={<MyFavorites />}></Route>
         <Route path="/NotFound" element={<NotFound />}></Route>
       </Routes>
+      <Footer />
     </Router>
   );
 }
