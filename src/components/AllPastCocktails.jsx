@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "../css/mycocktails.css";
 
-function AllPastCocktails() {
+function AllPastCocktails({ showAlert, alert }) {
   const [allPastCocktailsData, setAllPastCocktailsData] = useState("");
 
   const getAllPastCocktails = async () => {
@@ -36,9 +36,18 @@ function AllPastCocktails() {
 
   return (
     <div className="container all-past-cocktails-container">
+      <span className={`alert ${alert ? alert.alert : ""}`}>
+        {alert ? alert.message : ""}
+      </span>
       <h2>
         All Past Cocktails{" "}
-        <div className="delete-all-cocktails" onClick={() => deleteCocktail()}>
+        <div
+          className="delete-all-cocktails"
+          onClick={() => {
+            deleteCocktail();
+            showAlert("danger show", "All cocktails have been deleted.");
+          }}
+        >
           Clear entire list
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z" />
@@ -54,6 +63,7 @@ function AllPastCocktails() {
                   className="delete-cocktail"
                   onClick={() => {
                     deleteCocktail(drink.id);
+                    showAlert("danger show", `${drink.name} deleted.`);
                   }}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">

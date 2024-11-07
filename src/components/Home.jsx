@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/mycocktails.css";
+import "../css/alert.css";
 
 function Home() {
   return (
