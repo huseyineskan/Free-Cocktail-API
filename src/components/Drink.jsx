@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "../css/drink.css";
 import axios from "axios";
 
 function Drink({ data, getRandomCocktail, showAlert, alert }) {
-  const saveDrink = async (param = "") => {
+  const saveDrink = async (url = "") => {
+    if (!data || !data.drinks || data.drinks.length === 0) {
+      return; // Eğer data veya data.drinks yoksa işlemi sonlandır
+    }
+
     const drinkInfos = {
       id: data.drinks[0].idDrink,
       name: data.drinks[0].strDrink,
       img: data.drinks[0].strDrinkThumb,
     };
 
-    drinkInfos.id && axios.post(`http://localhost:3000/${param}`, drinkInfos);
+    drinkInfos.id &&
+      (await axios.post(`http://localhost:3000/${url}`, drinkInfos));
   };
+
+  useEffect(() => {
+    saveDrink("allpastcocktails");
+  }, [data]);
 
   return (
     <div className="container drink-container">
@@ -24,7 +33,6 @@ function Drink({ data, getRandomCocktail, showAlert, alert }) {
         <button
           onClick={() => {
             getRandomCocktail();
-            saveDrink("allpastcocktails");
             showAlert(
               "success show",
               "A new cocktail has been found and saved."

@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Drink from "./components/Drink";
 import AllPastCocktails from "./components/AllPastCocktails";
-import MyFavorites from "./components/MyFavorites";
+import MyFavorites from "./components/Myfavorites";
 import NotFound from "./components/NotFound";
 import axios from "axios";
 import Footer from "./components/Footer";
