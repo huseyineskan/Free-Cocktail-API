@@ -58,7 +58,12 @@ function MyFavorites({ showAlert, alert }) {
         {allMyFavoritesData ? (
           allMyFavoritesData.length > 0 ? (
             allMyFavoritesData.map((drink, i) => (
-              <div key={i} className="my-coctail-box" title={drink.name}>
+              <div
+                key={i}
+                className="my-coctail-box"
+                title={drink.name}
+                onClick={() => console.log(drink.id)}
+              >
                 <div
                   className="delete-cocktail"
                   onClick={() => {

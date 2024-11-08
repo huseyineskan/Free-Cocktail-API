@@ -1,4 +1,51 @@
 {
-  "myfavorites": [],
-  "allpastcocktails": []
+  "myfavorites": [
+    {
+      "id": "11558",
+      "name": "Japanese Fizz",
+      "img": "https://www.thecocktaildb.com/images/media/drink/37vzv11504884831.jpg"
+    },
+    {
+      "id": "12692",
+      "name": "Lassi Khara",
+      "img": "https://www.thecocktaildb.com/images/media/drink/m1suzm1487603970.jpg"
+    },
+    {
+      "id": "15597",
+      "name": "Absolut Stress #2",
+      "img": "https://www.thecocktaildb.com/images/media/drink/xuyqrw1472811825.jpg"
+    },
+    {
+      "id": "11580",
+      "name": "John Collins",
+      "img": "https://www.thecocktaildb.com/images/media/drink/0t4bv71606854479.jpg"
+    }
+  ],
+  "allpastcocktails": [
+    {
+      "id": "11558",
+      "name": "Japanese Fizz",
+      "img": "https://www.thecocktaildb.com/images/media/drink/37vzv11504884831.jpg"
+    },
+    {
+      "id": "12692",
+      "name": "Lassi Khara",
+      "img": "https://www.thecocktaildb.com/images/media/drink/m1suzm1487603970.jpg"
+    },
+    {
+      "id": "11417",
+      "name": "Gin Sour",
+      "img": "https://www.thecocktaildb.com/images/media/drink/noxp7e1606769224.jpg"
+    },
+    {
+      "id": "13499",
+      "name": "Oreo Mudslide",
+      "img": "https://www.thecocktaildb.com/images/media/drink/tpwwut1468925017.jpg"
+    },
+    {
+      "id": "178314",
+      "name": "Gin Basil Smash",
+      "img": "https://www.thecocktaildb.com/images/media/drink/jqh2141572807327.jpg"
+    }
+  ]
 }
